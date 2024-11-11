@@ -1,0 +1,118 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+.boxShodow {
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
+
+/* customized scroll bar */
+@tailwind utilities;
+
+@layer utilities {
+  .customScrollbar {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #3b82f6 #e5e7eb; /* Thumb color (blue-500), Track color (gray-200) */
+  }
+
+  /* Webkit browsers */
+  .customScrollbar::-webkitscrollbar {
+    width: 4px;
+  }
+  .customScrollbar::-webkitscrollbar-track {
+    background: #e5e7eb; /* gray-200 */
+  }
+  .customScrollbar::-webkitscrollbar-thumb {
+    background-color: #3b82f6; /* blue-500 */
+    border-radius: 4px;
+    border: 2px solid transparent;
+  }
+  .customScrollbar::-webkitscrollbar-thumb:hover {
+    background-color: #2563eb; /* blue-600 */
+  }
+}
+
+/* till here */
+.bgCustom {
+  /* background-color: #003250; */
+}
+.customColor {
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: white;
+  color: #003250;
+  border: solid 1px #6fffe6;
+  border-radius: 9999px;
+}
+.customColor:hover {
+  background-color: #003250;
+  border: 1px solid #003250;
+  color: #6fffe6;
+}
+.bgGrayColor {
+  background-color: #f9fafb;
+}
+
+.headerBg {
+  height: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.formLabel {
+  width: 120px;
+  margin-right: 8px;
+}
+
+.customBtn {
+  width: 150px;
+}
+
+@media (max-width: 640px) {
+  .customBtn {
+    margin: 12px auto 0;
+    font-size: 14px;
+
+    width: 150px;
+  }
+}
+.logo {
+  width: 48px;
+  height: 20px;
+  background: url(./icons/logo.png) center center no-repeat;
+  background-size: contain;
+}
+.headerBorder {
+  border-bottom: 1px solid #6fffe6;
+}
+.headerHdg {
+  margin-left: 3px !important;
+  font-weight: 700;
+}
+@media (max-width: 655px) {
+  .headerHdg {
+    font-size: 0.8rem !important;
+    margin-left: 2px;
+  }
+}
+@media (max-width: 534px) {
+  .headerHdg {
+    font-size: 0.3rem !important;
+  }
+}
+
+.headerIcon {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.welcomeText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+@media (max-width: 440px) {
+  .welcomeText {
+    font-size: 0.5rem !important;
+    padding-left: 5px;
+  }
+}
